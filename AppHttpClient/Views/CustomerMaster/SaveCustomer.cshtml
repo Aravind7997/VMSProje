@@ -1,0 +1,57 @@
+﻿@model DataAccessLayer.CustomerMaster
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SaveCustomer</title>
+</head>
+<body>
+    <h3>Details</h3>
+    <div>
+        @using (Html.BeginForm("SaveCust", "CustomerMaster", FormMethod.Post))
+        {
+            <div>
+                @Html.Label("CustomerId: ")
+                @Html.TextBoxFor(x => x.CustId)
+            </div>
+
+            <div>
+                @Html.Label("FirstName ")
+                @Html.TextBoxFor(x => x.FirstName)
+            </div>
+            <div>
+                @Html.Label("LastName ")
+                @Html.TextBoxFor(x => x.LastName)
+            </div>
+            <div>
+                @Html.Label("Email ")
+                @Html.TextBoxFor(x => x.Email)
+            </div>
+            <div>
+                @Html.Label("ContactNo ")
+                @Html.TextBoxFor(x => x.ContactNo)
+            </div>
+            <div>
+                @Html.Label("Country ")
+                @Html.TextBoxFor(x => x.Country)
+            </div>
+            <div>
+                @Html.Label("State ")
+                @Html.TextBoxFor(x => x.States)
+            </div>
+            <div>
+                @Html.Label("City ")
+                @Html.TextBoxFor(x => x.City)
+            </div>
+            <input type="submit" value="send" />
+        }
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿@model DataAccessLayer.BillInfo
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetBillById</title>
+</head>
+<body>
+    <div class="container">
+        <h2>GetServiceRecordInfoByServiceRefNo</h2>
+        <div>
+            <table class="table table-hover">
+                <tr class="table-primary">
+                    <th>ServiceRefNo</th>
+                    <th>ServiceRecordInfo</th>
+                    <th>ItemId/th>
+                    <th>NextServiceDate</th>
+                    <th>ItemsInfo</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>ItemAmount</th>
+
+                </tr>
+                <tr>
+                    <td>@Model.ServiceRefNo</td>
+                    <td>@Model.ServiceRefNo</td>
+                    <td>@Model.ServiceRecordInfo</td>
+                    <td>@Model.ItemId/td>
+                    <td>@Model.ItemsInfo</td>
+                    <td>@Model.Price</td>
+                    <td>@Model.Qty</td>
+                    <td>@Model.ItemAmount</td>
+
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+</html>
